@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP" />
+<meta http-equiv="content-language" content="ja" />
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="XOOPS, THEME, DESIGN, DEMO, free, template, テーマ, デザイン, ズープス, フリー, 無料, テンプレート" />
+<meta name="description" content="THIS IS BCOOL'S XOOPS THEME ONLINE DEMO SITE.
+YOU CAN GET THESE THEMES FOR FREE." />
+<meta name="rating" content="general" />
+<meta name="author" content="BCOOL" />
+<meta name="copyright" content="Copyright (C) 2005" />
+<title>xoops theme - ::BCOOL THEME::</title>
+<link href="../../../favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="../../../xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../../Cube/style.css" />
+<!-- RMV: added module header -->
+
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+//--></script><script type="text/javascript" src="../../../include/xoops.js"></script><script type="text/javascript"><!--
+//-->
+</script>
+</head>
+<body id="page">
+<div id="header_r"><p id="header_l"><img src="../../Cube/images/logo.gif" alt="::BCOOL THEME::" /></p>
+	<div class="xoops_banner"></div>
+</div>
+<div id="header_top_l"></div>
+
+<div id="contents">
+
+<div id="centercolumn">
+      	 <div id="content"><body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td align="center" valign="middle"> <br>
+      <br>
+      <br>
+      <br><font size="+2"><b>
+      HTTP 404</b></font> - ファイル未検出<br>
+      ページが見つかりません。<br>
+      <br>
+      検索中のページは、削除された、名前が変更された、または現在利用できない可能性があります。<br>
+      アドレスバーにページアドレスを入力した場合は、ページアドレスを正しく入力したかどうかを確認してください。</td>
+  </tr>
+</table>
+</body>
+</div>
+</div>
+
+
+<div id="leftcolumn">
+			  <div class="blockTitle">main menu</div>
+		  <div class="blockContent"><table cellspacing="0">
+  <tr>
+    <td id="mainmenu">
+      <a class="menuTop" href="../../../default.htm">ホーム</a>
+      <!-- start module menu loop -->
+            <a class="menuMain" href="../../../modules/news/default.htm">NEWS</a>
+                    <a class="menuMain" href="../../../modules/newbb/default.htm">FORUM</a>
+                    <a class="menuMain" href="../../../modules/xoopsfaq/default.htm">FAQ</a>
+                    <a class="menuMain" href="../../../modules/mylinks/default.htm">LINKS</a>
+                    <a class="menuMain" href="../../../modules/xoopspartners/default.htm">PARTNERS</a>
+                    <!-- end module menu loop -->
+    </td>
+  </tr>
+</table></div>
+		  <br />
+	</div>
+
+<div id="rightcolumn">
+	</div>
+
+<p id="footer">POWED BY <a href="../../../../jp.xoops.org/default.htm">XOOPS</a> AND MANY DEVELOPERS &amp; CREATERS., theme design <a href="../../../../2bcool.net/default.htm" target="_blank">BCOOL</a> </p>
+</div>
+
+
+</body>
+</html>
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+

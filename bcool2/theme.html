@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+<head>
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<style type="text/css">
+<!--
+-->
+</style>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<{$xoops_module_header}>
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<div align="center"><table border="0" cellpadding="0" cellspacing="0" style="width:750px; ">
+    <tr>
+      <td colspan="2" align="left" id="header_01"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="left" id="header_02"><h1><img src="<{$xoops_imageurl}>images/logo.gif" hspace="20" alt="<{$xoops_sitename}>" /></h1></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="left" id="menu_bar">| <a href="<{$xoops_url}>/index.php">Accueil</a> | <{foreach item=module from=$ex_mainmenu.modules }> <a href="<{$xoops_url}>/modules/<{$module.directory}>/index.php"><{$module.name}></a> | <{/foreach}> </td>
+    </tr>
+    <tr>
+      <td style="width:166px; " align="left" id="login_block"><{if !$xoops_isuser}>
+	  <form style="margin-top: 0px;" action="<{$xoops_url}>/user.php" method="post">
+	  <table width="100%"  border="0" cellspacing="5" cellpadding="0">
+		<tr>
+          <td colspan="2">Connexion</td>
+          </tr>
+        <tr>
+          <td align="right">Pseudo : </td>
+          <td align="left"><input type="text" name="uname" size="8" value="<{$block.unamevalue}>" maxlength="25"style="font-size:11px; padding:0px;" /></td>
+        </tr>
+        <tr>
+          <td align="right">Login : </td>
+          <td align="left"><input type="password" name="pass" size="8" maxlength="32"style="font-size:10px; padding:0px;" /></td>
+        </tr>
+        <tr align="center">
+          <td colspan="2"><input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+          <input type="hidden" name="op" value="login" /><input type="submit" value="OK" style="font-size:90%; padding:0px;" /></td>
+          </tr>
+        <tr align="center">
+          <td colspan="2"><a href="<{$xoops_url}>/user.php">Connexion</a>/<a href="<{$xoops_url}>/register.php">S'enregistrer</a></td>
+        </tr>
+      </table>
+     </form>
+	  <{else}>Bienvenue <{$xoops_uname}>
+	  <div class="u_menu">-<a href="<{$xoops_url}>/user.php"> voir son compte </a> <br />
+	  -	  <a href="<{$xoops_url}>/edituser.php"> éditer son compte </a> <br />
+	  -	  <a href="<{$xoops_url}>/notifications.php"> notification </a> <br />
+	  -	  <a href="<{$xoops_url}>/user.php?op=logout"> Déconnexion </a> <br />
+	  -	  <{if $ex_new_messages > 0}> <a class="highlight" href="<{$xoops_url}>/viewpmsg.php">Messages privés <span style="color:#ff0000; font-weight: bold;"><{$ex_new_messages}></span>)</a> <{else}> <a href="<{$xoops_url}>/viewpmsg.php">Messages Privés</a> <{/if}><br />
+	  -	  <{if $xoops_isadmin}> <a href="<{$xoops_url}>/admin.php">Administration</a></div><{/if}><{/if}></td>
+      <td style="width:584px;" id="main_image"><{if $ex_moduledir }><img src="<{$xoops_imageurl}>images/<{$ex_moduledir}>.jpg" alt="<{$ex_module_name}>" /><{else}><{/if}></td>
+    </tr>
+    <tr>
+      <td align="left" id="header_btm"></td>
+      <td align="left" id="header_btm_2"></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" style="width:750px;">
+    <tr>
+      <td style="width:166px;" id="leftcolumn"><img src="<{$xoops_imageurl}>images/spacer.gif" width="166" height="1" alt="."/>
+	  <{if $ex_module_dir }>
+	  	<{foreach item=module from=$ex_mainmenu.modules }>
+	  		<{if $module.directory == $ex_module_dir && $module.sublinks }>
+	  			<div class=¡ÈblockTitle¡É><{$ex_module_name}> :</div>
+	  			<div class=¡ÈblockContent¡É>
+	  				<{foreach item=sublink from=$module.sublinks}>
+	  					<a id="mainmenu" href="<{$sublink.url}>"><{$sublink.name}></a>
+	  				<{/foreach}>
+	  			</div>
+	  		<{/if}>
+	  	<{/foreach}>
+	  <{/if}>
+
+
+
+
+	  <{foreach item=block from=$xoops_lblocks}> <{if $block.title|regex_replace:"/.*nene/":"none" ne "none"}>
+        <div class="blockTitle"><{$block.title}></div>
+        <{/if}>
+        <div class="blockContent"><{$block.content}></div>
+        <br />
+<{/foreach}></td>
+      <td style="width:10px; "></td>
+      <td id="centercolumn"><br />
+
+<{if $xoops_showcblock == 1}>
+  <table cellspacing="0">
+    <tr>
+      <!-- Ãæ±û-º¸¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+      <td id="centerLcolumn"><{foreach item=block from=$xoops_clblocks}>
+          <div style="padding: 0px 0px 0px 8px;"> <{if $block.title|regex_replace:"/.*nene/":"none" ne "none"}>
+              <div class="blockTitle"><{$block.title}></div>
+    <{/if}>
+              <div class="blockContent"><{$block.content}></div>
+          </div>
+  <{/foreach}> </td>
+      <!-- Ãæ±û-º¸¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+      <!-- Ãæ±û-±¦¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+      <td id="centerRcolumn"><{foreach item=block from=$xoops_crblocks}>
+          <div style="padding: 0px 5px 0px 0px;"> <{if $block.title|regex_replace:"/.*nene/":"none" ne "none"}>
+              <div class="blockTitle"><{$block.title}></div>
+    <{/if}>
+              <div class="blockContent"><{$block.content}></div>
+          </div>
+  <{/foreach}> </td>
+      <!-- Ãæ±û-±¦¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+    </tr>
+    <tr>
+      <!-- Ãæ±û-Ãæ±û¥Ö¥í¥Ã¥¯ÉôÊ¬¤ÎÄêµÁ -->
+      <td id="centerCcolumn" colspan="2"><{foreach item=block from=$xoops_ccblocks}> <{if $block.title|regex_replace:"/.*nene/":"none" ne "none"}>
+          <div class="blockTitle"><{$block.title}></div>
+  <{/if}>
+          <div class="blockContent"><{$block.content}></div>
+  <{/foreach}> </td>
+      <!-- Ãæ±û-Ãæ±û¥Ö¥í¥Ã¥¯ÉôÊ¬½ª¤ï¤ê -->
+    </tr>
+  </table>
+<{/if}>
+  <!-- End display center blocks -->
+  <div id="content"> <{$xoops_contents}> <br />
+  </div><br />
+<div align="center">| <a href="<{$xoops_url}>/index.php">Accueil</a> | <{foreach item=module from=$ex_mainmenu.modules }> <a href="<{$xoops_url}>/modules/<{$module.directory}>/index.php"><{$module.name}></a> | <{/foreach}> </div>
+  </td><{if $xoops_showrblock == 1}>
+      <td id="rightcolumn"><{foreach item=block from=$xoops_rblocks}> <{if $block.title|regex_replace:"/.*nene/":"none" ne "none"}>
+        <div class="blockTitle"><{$block.title}></div>
+        <{/if}>
+        <div class="blockContent"><{$block.content}></div>
+      <{/foreach}></td><{/if}>
+    </tr>
+  </table>
+    <table border="0" cellpadding="0" cellspacing="0" style="width:775px;">
+      <tr>
+        <td width="10"></td>
+        <td align="right" valign="middle" id="footer"><hr size="1" />
+        <{$xoops_footer}> theme design by <a href="../../../2bcool.net/default.htm" target="_blank">BCOOL</a><br />
+        <br />        <br /></td>
+        <td width="10"></td>
+      </tr>
+    </table>
+</div>
+</body>
+</html>
+
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+
